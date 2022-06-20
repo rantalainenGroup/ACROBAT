@@ -82,6 +82,8 @@ class Acrobat2022():
         #stats
         p90s=df_agg["p90"].values
         medianp90s=np.median(p90s)
+        stdp90s=np.std(p90s)
+        twostdp90s=2*np.std(p90s)
         meanp90s=np.mean(p90s)
         variancep90s=np.var(p90s)
         meanofmeans=np.mean(df_agg["mean"].values)
@@ -90,7 +92,8 @@ class Acrobat2022():
             "medianp90s":medianp90s,
             "meanp90s":meanp90s,
             "variancep90s":variancep90s,
-            "meanofmeans":meanofmeans
+            "meanofmeans":meanofmeans,
+            "twostdp90s":twostdp90s
         }
         
         for i, row in df_agg.iterrows():
