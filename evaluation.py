@@ -93,6 +93,7 @@ class Acrobat2022():
             "meanp90s":meanp90s,
             "variancep90s":variancep90s,
             "meanofmeans":meanofmeans,
+            "stdp90s":stdp90s,
             "twostdp90s":twostdp90s
         }
         
